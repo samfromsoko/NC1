@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @Binding var showSheet: Bool
+    //    @Binding var showSheet: Bool
     @ObservedObject var viewModel = ContentViewModel()
     var body: some View {
-                
+        
         ScrollView {
             VStack {
                 ForEach(listItems, id: \.self) { listItem in
@@ -21,7 +21,7 @@ struct ContentView: View {
                     } label: {
                         Text("\(listItem.title)")
                             .padding(8)
-//                            .background(Color.gray)
+                        //                            .background(Color.gray)
                             .foregroundColor(.white)
                             .clipShape(Capsule())
                     }
@@ -32,7 +32,7 @@ struct ContentView: View {
             }
             .frame(width: 400)
         }
-
+        
     }
 }
 

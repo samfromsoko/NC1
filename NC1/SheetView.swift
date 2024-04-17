@@ -9,25 +9,12 @@ import SwiftUI
 
 struct SheetView: View {
     @ObservedObject var viewModel = ContentViewModel()
-//    @Binding var showSheet: Bool
+    //    @Binding var showSheet: Bool
     @State var count: Int = 0
     @EnvironmentObject var todoList:ListViewModel
-    
-    
-    
+
     
     var body: some View {
-        Button{
-//            showSheet = false  // 닫기 버튼 클릭 시 모달 뷰 숨김
-            print("hi")
-        } label: {
-            Image(systemName: "xmark")
-                .padding()
-                .background(Color.red)
-                .foregroundColor(.white)
-                .clipShape(Capsule())
-        }
-        
         ScrollView {
             VStack {
                 ForEach(todoList.listHistory, id: \.self) { listItem in

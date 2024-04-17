@@ -37,7 +37,32 @@ class ListViewModel: ObservableObject{
         ListItem(title: "같이 하기", count: 0, iconName: "person.2"),
     ].sorted { $0.title < $1.title}
     
-    func top3() -> [ListItem] {
-        return listHistory.sorted { $0.count > $1.count }.prefix(3).map { $0 }
+    //top3를 선정하는 함수
+    func ranking() -> [ListItem] {
+        let countedItems = listHistory.filter {$0.count > 0 }
+        return countedItems.sorted { $0.count > $1.count }/*.prefix(3)*/.map { $0 }
     }
+    
+    //새로운 시도를 선정하는 함수
+    func try3() -> [ListItem] {
+        
+        
+//        guard noCount.count >= 3 else {
+//            return noCount
+//        }
+//        
+//        var randomItems = [ListItem]()
+//        var chosenIndexes = Set<Int>()
+//        while chosenIndexes.count < 3 {
+//            let randomIndex = Int.random(in: 0..<noCount.count)
+//            if !chosenIndexes.contains(randomIndex) {
+//                randomItems.append(noCount[randomIndex])
+//            }
+//        }
+        let countedItems = listHistory.filter {$0.count == 0 }
+        print(countedItems)
+        return countedItems
+    }
+    
+    
 }
