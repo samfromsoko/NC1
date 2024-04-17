@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct NC1App: App {
+    @StateObject var todoList = ListViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                Calendar()
+            }
         }
+        .environmentObject(todoList)
+//가장 바깥에 해야 문제가 안 생기는 애. 데이터를 뿌려주기 때문!
     }
 }
+//entry point
