@@ -46,19 +46,6 @@ class ListViewModel: ObservableObject{
     //새로운 시도를 선정하는 함수
     func try3() -> [ListItem] {
         
-        
-//        guard noCount.count >= 3 else {
-//            return noCount
-//        }
-//        
-//        var randomItems = [ListItem]()
-//        var chosenIndexes = Set<Int>()
-//        while chosenIndexes.count < 3 {
-//            let randomIndex = Int.random(in: 0..<noCount.count)
-//            if !chosenIndexes.contains(randomIndex) {
-//                randomItems.append(noCount[randomIndex])
-//            }
-//        }
         let countedItems = listHistory.filter {$0.count == 0 }
         print(countedItems)
         return countedItems
@@ -66,3 +53,6 @@ class ListViewModel: ObservableObject{
     
     
 }
+
+
+

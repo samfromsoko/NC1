@@ -39,7 +39,6 @@ struct Calendar: View {
                         .pickerStyle(SegmentedPickerStyle())
                         .padding()
                         .onChange(of:selectedSegment){ newValue in
-                            
                             if newValue == 1{
                                 tmpTry3 = todoList.try3()
                             }

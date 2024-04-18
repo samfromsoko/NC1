@@ -17,14 +17,15 @@
 		FCE3062D2BCE9F48009FEC95 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3062C2BCE9F48009FEC95 /* ListItem.swift */; };
 		FCE3062F2BCE9F6C009FEC95 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3062E2BCE9F6C009FEC95 /* SheetView.swift */; };
 		FCE306372BCEA126009FEC95 /* NC1_WApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE306362BCEA126009FEC95 /* NC1_WApp.swift */; };
-		FCE306392BCEA126009FEC95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE306382BCEA126009FEC95 /* ContentView.swift */; };
+		FCE306392BCEA126009FEC95 /* SheetViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE306382BCEA126009FEC95 /* SheetViewWatch.swift */; };
 		FCE3063B2BCEA128009FEC95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE3063A2BCEA128009FEC95 /* Assets.xcassets */; };
 		FCE3063E2BCEA128009FEC95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE3063D2BCEA128009FEC95 /* Preview Assets.xcassets */; };
 		FCE306482BCEA128009FEC95 /* NC1_W_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE306472BCEA128009FEC95 /* NC1_W_Watch_AppTests.swift */; };
 		FCE306522BCEA128009FEC95 /* NC1_W_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE306512BCEA128009FEC95 /* NC1_W_Watch_AppUITests.swift */; };
 		FCE306542BCEA128009FEC95 /* NC1_W_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE306532BCEA128009FEC95 /* NC1_W_Watch_AppUITestsLaunchTests.swift */; };
 		FCE306572BCEA128009FEC95 /* NC1_W Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FCE306342BCEA126009FEC95 /* NC1_W Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		FCE306632BCEA173009FEC95 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE306622BCEA173009FEC95 /* ListItem.swift */; };
+		FCE306632BCEA173009FEC95 /* ListItemWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE306622BCEA173009FEC95 /* ListItemWatch.swift */; };
+		FCE306642BD0E556009FEC95 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE3062C2BCE9F48009FEC95 /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +95,7 @@
 		FCE3062E2BCE9F6C009FEC95 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		FCE306342BCEA126009FEC95 /* NC1_W Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC1_W Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE306362BCEA126009FEC95 /* NC1_WApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_WApp.swift; sourceTree = "<group>"; };
-		FCE306382BCEA126009FEC95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCE306382BCEA126009FEC95 /* SheetViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewWatch.swift; sourceTree = "<group>"; };
 		FCE3063A2BCEA128009FEC95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE3063D2BCEA128009FEC95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCE306432BCEA128009FEC95 /* NC1_W Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NC1_W Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +103,7 @@
 		FCE3064D2BCEA128009FEC95 /* NC1_W Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NC1_W Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE306512BCEA128009FEC95 /* NC1_W_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_W_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		FCE306532BCEA128009FEC95 /* NC1_W_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_W_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FCE306622BCEA173009FEC95 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		FCE306622BCEA173009FEC95 /* ListItemWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,8 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				FCE306362BCEA126009FEC95 /* NC1_WApp.swift */,
-				FCE306382BCEA126009FEC95 /* ContentView.swift */,
-				FCE306622BCEA173009FEC95 /* ListItem.swift */,
+				FCE306382BCEA126009FEC95 /* SheetViewWatch.swift */,
+				FCE306622BCEA173009FEC95 /* ListItemWatch.swift */,
 				FCE3063A2BCEA128009FEC95 /* Assets.xcassets */,
 				FCE3063C2BCEA128009FEC95 /* Preview Content */,
 			);
@@ -502,8 +503,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE306392BCEA126009FEC95 /* ContentView.swift in Sources */,
-				FCE306632BCEA173009FEC95 /* ListItem.swift in Sources */,
+				FCE306642BD0E556009FEC95 /* ListItem.swift in Sources */,
+				FCE306392BCEA126009FEC95 /* SheetViewWatch.swift in Sources */,
+				FCE306632BCEA173009FEC95 /* ListItemWatch.swift in Sources */,
 				FCE306372BCEA126009FEC95 /* NC1_WApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

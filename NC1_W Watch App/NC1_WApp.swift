@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct NC1_W_Watch_AppApp: App {
+//    @StateObject var todoList = ListViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                SheetViewWatch()
+            }
         }
+        .environmentObject(todoList)
+        
     }
 }
