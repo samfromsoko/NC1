@@ -38,6 +38,13 @@ struct Calendar: View {
                         }
                         .pickerStyle(SegmentedPickerStyle())
                         .padding()
+                        .onChange(of:selectedSegment){ newValue in
+                            
+                            if newValue == 1{
+                                tmpTry3 = todoList.try3()
+                            }
+                            
+                        }
                         
                         if selectedSegment == 0 {
                             List {
@@ -50,18 +57,23 @@ struct Calendar: View {
                                     }
                                 }
                             }
+                            .listStyle(.plain)
                         } else {
                             List {
                                 if tmpTry3.isEmpty {
                                     Text("박박적")
                                         .foregroundColor(.gray)
                                 } else {
-                                    ForEach(tmpTry3, id: \.self) { data in
+                                    ForEach(tmpTry3.prefix(3), id: \.self) { data in
                                         Text("\(data.title) 해보슈")
                                     }
                                 }
                             }
+                            .listStyle(.plain)
+
+                            
                         }
+                        
                         
                     }
                     
